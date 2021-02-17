@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
 
-  unicornstorev1:
+  unicornstore:
     build:
       context: ./
       dockerfile: UnicornStore_v1/Dockerfile

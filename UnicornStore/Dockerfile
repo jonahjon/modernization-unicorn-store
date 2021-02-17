@@ -9,8 +9,8 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /src
-COPY UnicornStore.csproj .
-RUN dotnet restore UnicornStore.csproj
+COPY UnicornStore/UnicornStore.csproj UnicornStore/
+RUN dotnet restore UnicornStore/UnicornStore.csproj
 COPY . .
 WORKDIR /src/UnicornStore
 RUN dotnet build UnicornStore.csproj -c Release -o /app
