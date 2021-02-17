@@ -42,6 +42,7 @@
                     @await Component.InvokeAsync("GenreMenu")
                     @await Component.InvokeAsync("CartSummary")
                 </ul>
+                @await Html.PartialAsync("_LoginPartial")
             </div>
         </div>
     </div>
@@ -50,6 +51,8 @@
         <hr />
         <footer class="navbar navbar-fixed-bottom navbar-default text-center">
             <p><a href="https://www.github.com/aws-samples/modernization-unicorn-store">www.github.com/aws-samples/modernization-unicorn-store</a></p>
+            <small>@Html.ActionLink("admin", "Index", "StoreManager", new { area = "Admin" })</small>
+            <small>This view served from @GetType().Assembly.FullName</small>
         </footer>
     </div>
 

@@ -5,6 +5,6 @@ services:
   unicornstore:
     build:
       context: ./
-      dockerfile: UnicornStore_v1/Dockerfile
+      dockerfile: UnicornStore/Dockerfile
     ports:
       - 8080:80
