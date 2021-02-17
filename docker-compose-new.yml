@@ -2,9 +2,9 @@ version: '3.4'
 
 services:
 
-  unicornstore:
+  unicornstorev1:
     build:
       context: ./
-      dockerfile: UnicornStore/Dockerfile
+      dockerfile: UnicornStore_v1/Dockerfile
     ports:
       - 8080:80
