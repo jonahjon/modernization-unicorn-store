@@ -13,7 +13,7 @@ namespace UnicornStore.Data
 {
     public static class DbInitializer
     {
-        const string imgUrl = "~/Images/placeholder.png";
+        const string imgUrl = "~/prod/Images/placeholder.png";
 
         public static async Task Initialize(
             UnicornStoreContext context,
