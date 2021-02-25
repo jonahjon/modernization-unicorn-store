@@ -117,7 +117,7 @@ namespace UnicornStore
             if (env.IsDevelopment())
             {
                 // StatusCode pages to gracefully handle status codes 400-599.
-                app.UseStatusCodePagesWithRedirects("~/prod/Home/StatusCodePage");
+                app.UseStatusCodePagesWithRedirects("~/Home/StatusCodePage");
 
                 // Display custom error page in production when error occurs
                 // During development use the ErrorPage middleware to display error information in the browser
@@ -130,7 +130,7 @@ namespace UnicornStore
             if (env.IsProduction() || env.IsStaging())
             {
                 // StatusCode pages to gracefully handle status codes 400-599.
-                app.UseStatusCodePagesWithRedirects("~/prod/Home/StatusCodePage");
+                app.UseStatusCodePagesWithRedirects("~/Home/StatusCodePage");
 
                 app.UseExceptionHandler("/Home/Error");
             }
