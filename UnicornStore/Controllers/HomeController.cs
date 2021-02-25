@@ -52,17 +52,17 @@ namespace UnicornStore.Controllers
 
         public IActionResult Error()
         {
-            return View("~/Views/Shared/Error.cshtml");
+            return View("~/prod/Views/Shared/Error.cshtml");
         }
 
         public IActionResult StatusCodePage()
         {
-            return View("~/Views/Shared/StatusCodePage.cshtml");
+            return View("~/prod/Views/Shared/StatusCodePage.cshtml");
         }
 
         public IActionResult AccessDenied()
         {
-            return View("~/Views/Shared/AccessDenied.cshtml");
+            return View("~/prod/Views/Shared/AccessDenied.cshtml");
         }
 
         private Task<List<Blessing>> GetTopSellingBlessingsAsync(UnicornStoreContext dbContext, int count)
