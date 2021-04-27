@@ -2,7 +2,7 @@
 
 :imagesdir: static
 
-AWS Sample Application for containerizing a .NET application
+AWS Sample Application for containerizing a .NET application for 2 versions of the app
 
 image::images/unicornstore.png[Unicorn Store]
 
