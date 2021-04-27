@@ -13,10 +13,10 @@ exec $SHELL
 
 #### Configure the AWS Environment
 
-After you have the installed the latest awscli and pip we need to configure our environment to use us-west-2
+After you have the installed the latest awscli and pip we need to configure our environment to use us-east-1
 
 ```
-aws configure set region us-west-2
+aws configure set region us-east-1
 
 ```
 
